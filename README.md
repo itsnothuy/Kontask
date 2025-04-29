@@ -98,25 +98,6 @@ konTask/
 │   └── terraform/          # (optional) IaC for cloud resources
 └── README.md
 ```
-```markdown
-## Project Structure
-```text
-konTask/
-├── mobile/                 # React Native app (Expo)
-├── backend/
-│   ├── app/
-│   │   ├── main.py         # FastAPI entry-point
-│   │   ├── api/            # Route modules
-│   │   ├── core/           # Settings, logging
-│   │   ├── db/             # SQLAlchemy models, session
-│   │   ├── rag/            # Embedding, vector search, re-rank
-│   │   └── services/       # Stripe, Okta, Allstate wrappers
-│   └── Dockerfile
-├── infra/
-│   ├── docker-compose.yml
-│   └── terraform/          # (optional) IaC for cloud resources
-└── README.md
-```
 
 ## Getting Started
 
