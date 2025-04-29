@@ -1,0 +1,25 @@
+# API / Web
+fastapi==0.115.12
+uvicorn[standard]==0.33.0
+uvloop==0.21.0
+sqlalchemy==2.0.40
+python-dotenv==1.0.1
+psycopg2-binary==2.9.10
+
+# Auth / Security
+pydantic==2.10.6
+cryptography==44.0.2
+passlib[bcrypt]==1.7.4
+PyJWT==2.9.0
+
+# ML / NLP
+spacy==3.8.0
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+chromadb==0.5.23
+sentence-transformers==3.4.1
+transformers==4.49.0
+accelerate==1.0.1
+
+# Utilities you import directly
+httpx==0.28.1
+duckdb==0.7.1
