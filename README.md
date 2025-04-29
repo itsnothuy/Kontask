@@ -50,7 +50,7 @@ Traditional bulletin boards and social-media posts produce spam, slow response t
 | **Mobile** | React Native *(Expo)* |
 | **Backend** | Python 3.11 · FastAPI · Uvicorn |
 | **Data** | PostgreSQL (transactions) · MongoDB Atlas (search logs) |
-| **Vector DB** | Pinecone |
+| **Vector DB** | MongoDB |
 | **AI** | OpenAI Embeddings · GPT-4o (summaries) |
 | **Auth** | Okta JWT |
 | **Payments** | Stripe Connect |
@@ -73,7 +73,7 @@ graph TD
     B --> B3
     B --> B4
     B2 --- C1[(PostgreSQL)]
-    B3 -.-> C2[(Pinecone)]
+    B3 -.-> C2[(MongoDB)]
     B4 --> C3[(MongoDB SearchLogs)]
     Stripe{{Stripe Escrow}} --> B2
     Okta{{Okta BG Checks}} --> B1
@@ -105,7 +105,7 @@ konTask/
 - Docker ≥ 24  
 - Node.js ≥ 20 & Yarn (for mobile)  
 - Python ≥ 3.11  
-- OpenAI & Pinecone API keys  
+- OpenAI & MongoDB API keys  
 
 ### Quick Start
 ```bash
@@ -143,8 +143,8 @@ Create a `.env` file in both `backend/` and `mobile/` directories with the follo
 |------------------------------|-----------------------------------|
 | `DATABASE_URL`               | Postgres connection string        |
 | `MONGO_URI`                  | MongoDB Atlas URI                 |
-| `PINECONE_API_KEY`           | Pinecone API key                  |
-| `PINECONE_ENV`               | Pinecone environment/region       |
+| `MongoDB_API_KEY`           | MongoDB API key                  |
+| `MongoDB_ENV`               | MongoDB environment/region       |
 | `OPENAI_API_KEY`             | OpenAI embeddings & GPT access    |
 | `STRIPE_SECRET_KEY`          | Stripe payments                   |
 | `OKTA_DOMAIN`                | Okta background-check domain      |
